@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SparkGrowth Media</title>
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    : root {
+      --sg-teal: #00c2b4;
+      --sg-navy: #11202a;
+      --sg-gray: #f5f7fa;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    /* simple fade-in */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeIn 0.6s forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800">
+  <!-- Navbar -->
+  <header class="bg-white/90 backdrop-blur sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
+      <a href="#" class="text-2xl font-bold" style="color:var(--sg-teal)">SparkGrowth</a>
+      <nav class="hidden md:flex gap-8 text-sm font-medium">
+        <a href="#services" class="hover:text-teal-600">Services</a>
+        <a href="#packages" class="hover:text-teal-600">Packages</a>
+        <a href="#process" class="hover:text-teal-600">Process</a>
+        <a href="#contact" class="hover:text-teal-600">Contact</a>
+      </nav>
+      <a href="#contact" class="md:inline-block hidden bg-teal-500 px-4 py-2 rounded-full text-white text-sm font-semibold hover:bg-teal-600 transition">Book Call</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative bg-[var(--sg-navy)] text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 py-24 flex flex-col items-center text-center fade-in" style="animation-delay:0.1s">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Be found today<span class="text-[var(--sg-teal)]">—</span>before you’re forgotten tomorrow.</h1>
+      <p class="mt-6 text-lg max-w-2xl">Websites, branding, and AI-powered growth tools delivered in four weeks, then backed by low-touch monthly support.</p>
+      <a href="#packages" class="mt-10 bg-teal-500 hover:bg-teal-600 transition text-white px-6 py-3 rounded-full font-semibold">Explore Packages</a>
+    </div>
+    <!-- Decorative arrow -->
+    <svg class="absolute bottom-0 left-1/2 -translate-x-1/2" width="1440" height="100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 100h1440V0L720 80 0 0v100Z" fill="currentColor" style="color:var(--sg-gray)"/></svg>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="bg-[var(--sg-gray)] py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">What We Do</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-8 shadow fade-in" style="animation-delay:0.1s">
+          <h3 class="text-xl font-semibold mb-2">Responsive Web Design</h3>
+          <p class="text-sm">Pixel-perfect sites that load fast and look sharp on every device.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow fade-in" style="animation-delay:0.2s">
+          <h3 class="text-xl font-semibold mb-2">Brand Identity</h3>
+          <p class="text-sm">Logos, palettes, and style guides that signal credibility and trust.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow fade-in" style="animation-delay:0.3s">
+          <h3 class="text-xl font-semibold mb-2">AI Growth Toolkit</h3>
+          <p class="text-sm">Automated chat, content, and analytics to convert visitors into customers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section id="packages" class="py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">Launch Packages</h2>
+      <p class="mb-12">Flat pricing • 4-week delivery • No hidden fees</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Micro -->
+        <div class="border rounded-2xl p-8 shadow-sm flex flex-col fade-in" style="animation-delay:0.1s">
+          <h3 class="text-xl font-semibold mb-2">Micro</h3>
+          <p class="text-sm mb-6 text-gray-600">1-page site, basic branding, launch checklist.</p>
+          <span class="text-4xl font-bold mb-6">$499</span>
+          <ul class="text-left text-sm grow space-y-2 mb-6">
+            <li>• Single-scroll homepage</li>
+            <li>• Mobile responsive</li>
+            <li>• Basic SEO setup</li>
+          </ul>
+          <a href="#contact" class="mt-auto bg-[var(--sg-navy)] hover:bg-[var(--sg-teal)] transition text-white px-4 py-2 rounded-full">Get Started</a>
+        </div>
+        <!-- Starter -->
+        <div class="border-2 border-[var(--sg-teal)] bg-[var(--sg-gray)] rounded-2xl p-8 shadow-lg flex flex-col scale-105 fade-in" style="animation-delay:0.2s">
+          <h3 class="text-xl font-semibold mb-2">Starter</h3>
+          <p class="text-sm mb-6 text-gray-600">5-page site, custom visuals, lead capture, SEO basics.</p>
+          <span class="text-4xl font-bold mb-6">$1,499</span>
+          <ul class="text-left text-sm grow space-y-2 mb-6">
+            <li>• Custom design</li>
+            <li>• Lead/gen forms integrated</li>
+            <li>• Google Analytics & heatmaps</li>
+          </ul>
+          <a href="#contact" class="mt-auto bg-[var(--sg-navy)] hover:bg-[var(--sg-teal)] transition text-white px-4 py-2 rounded-full">Most Popular</a>
+        </div>
+        <!-- Platinum -->
+        <div class="border rounded-2xl p-8 shadow-sm flex flex-col fade-in" style="animation-delay:0.3s">
+          <h3 class="text-xl font-semibold mb-2">Platinum</h3>
+          <p class="text-sm mb-6 text-gray-600">10-page site, e-commerce/portal, advanced SEO, AI chat.</p>
+          <span class="text-4xl font-bold mb-6">$2,999</span>
+          <ul class="text-left text-sm grow space-y-2 mb-6">
+            <li>• Shop or member portal</li>
+            <li>• Premium branding suite</li>
+            <li>• AI chatbot & reporting</li>
+          </ul>
+          <a href="#contact" class="mt-auto bg-[var(--sg-navy)] hover:bg-[var(--sg-teal)] transition text-white px-4 py-2 rounded-full">Work With Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="bg-[var(--sg-gray)] py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-12">Our 4-Week Process</h2>
+      <div class="grid md:grid-cols-4 gap-8 text-left">
+        <div class="fade-in" style="animation-delay:0.1s">
+          <h4 class="text-lg font-semibold mb-2">Week 1</h4>
+          <p class="text-sm">Kick-off, discovery workshop, mood-board.</p>
+        </div>
+        <div class="fade-in" style="animation-delay:0.2s">
+          <h4 class="text-lg font-semibold mb-2">Week 2</h4>
+          <p class="text-sm">Wireframes, copy drafts, brand concepts.</p>
+        </div>
+        <div class="fade-in" style="animation-delay:0.3s">
+          <h4 class="text-lg font-semibold mb-2">Week 3</h4>
+          <p class="text-sm">Full build, integrations, cross-device QA.</p>
+        </div>
+        <div class="fade-in" style="animation-delay:0.4s">
+          <h4 class="text-lg font-semibold mb-2">Week 4</h4>
+          <p class="text-sm">Launch, training, analytics + growth roadmap.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center fade-in" style="animation-delay:0.1s">
+      <h2 class="text-3xl font-bold mb-4">Let’s Ignite Your Growth</h2>
+      <p class="mb-8">Ready to launch? Send us a note and we’ll set up a quick discovery call.</p>
+      <a href="mailto:hello@sparkgrowth.co" class="inline-block bg-teal-500 hover:bg-teal-600 transition text-white px-8 py-3 rounded-full font-semibold">Email Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[var(--sg-navy)] text-white py-6 text-center text-sm">
+    © 2025 SparkGrowth Media • Websites & Growth Tools in 4 Weeks
+  </footer>
+
+</body>
+</html>
